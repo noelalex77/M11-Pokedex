@@ -1,4 +1,3 @@
-<!-- PokemonDetails.vue -->
 
 <script setup>
 import { ref, onMounted } from 'vue';
@@ -37,7 +36,7 @@ onMounted(() => {
       <div class="detail-row">
         <span>Evolution:</span> <span>{{ pokemonDetails.evolution }}</span>
       </div>
-      <!-- Add more details as needed -->
+      
     </div>
   </template>
   
@@ -50,7 +49,7 @@ onMounted(() => {
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2);
-    text-align: center; /* Center-align the entire content */
+    text-align: center;
   }
   
   h1 {
@@ -68,5 +67,4 @@ onMounted(() => {
     font-weight: bold;
   }
   
-  /* Add more styles as needed */
   </style>
