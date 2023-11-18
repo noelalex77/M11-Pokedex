@@ -1,17 +1,17 @@
 import axios from 'axios'
 
 const apiClient = axios.create({
-    baseURL: 'https://my-json-server.typicode.com/noelalex77/pokemondata',  // notice that it doesn't include books
+    baseURL: 'https://my-json-server.typicode.com/noelalex77/pokemondata',  
     withCredentials: false,
     headers: {
-        Accept: 'application/json',   // what client expect
-        'Content-Type': 'application/json' // descriping our request content (none here)
+        Accept: 'application/json',  
+        'Content-Type': 'application/json' 
     }
 })
 
 export default {
     getPokemon() { 
-        return apiClient.get('/pokemondata') //  notice that /books will be append to the baseURL
+        return apiClient.get('/pokemondata') 
     },
     
     getPokemonID(id){
