@@ -4,7 +4,6 @@ import { ref, onMounted } from 'vue';
 import PokemonService from '@/Services/PokemonService.js';
 
 const pokemonDetails = ref(null);
-//const pokemonId = ref(1); // Set the desired Pokemon ID dynamically
 
 const props = defineProps({
     id: {required: true}
